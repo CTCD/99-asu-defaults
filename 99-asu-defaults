@@ -12,7 +12,7 @@ echo -e "root\nroot" | (passwd root)
 
 cat <<EOF >/bin/upasu
 if ! command -v curl &>/dev/null; then
-    echo "The download and installation of curl are in progress"
+    echo "Downloading and installing curl, please wait..."
     opkg update &>/dev/null && opkg install curl &>/dev/null && echo "curl installation successful"
 fi
 stable_release=\$(curl -s "https://downloads.openwrt.org/releases/" | grep -oE '(\d+\.\d+\.\d+)\/' | tail -n 1 | sed 's/\///')
