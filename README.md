@@ -11,3 +11,5 @@
 * `PACKAGES="packagename" upasu`
 * Add the cron job to run the upasu script monthly. For example, to run the script on the 1st day of every month at 1:00 AM:
 * `echo "0 1 1 * * echo yes | upasu" >>/etc/crontabs/root`
+
+![upasu](upasu.png)
